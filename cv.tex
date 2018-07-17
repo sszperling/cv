@@ -1,8 +1,9 @@
 \documentclass[10pt, a4paper, sans]{moderncv}
 \usepackage[a4paper, margin=1.5cm, bottom=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
-%\usepackage[spanish,es-lcroman]{babel}
-\usepackage[english]{babel} % moderncv está buggeado con spanish
+\usepackage{gettext}
+\usepackage{fontawesome}
+\usepackage[english]{babel}
 
 \moderncvstyle{seba}
 \moderncvcolor{blue}
@@ -10,7 +11,7 @@
 \name{Sebastián Ariel}{Szperling}
 \phone[mobile]{+54 (11) 3511-8184}
 \email{zebaszp@gmail.com}
-\quote{Soy estudiante de Ciencias de la Computación en la UBA. Me gustan los desafíos y experimentar con nuevas tecnologías, y busco que mi trabajo me sirva para complementar mis estudios.}
+\quote{\gettext{I'm a CS student with a knack for the low-level. I work on making apps better in terms of performance, creating scalable architectures and always keeping up-to-date with efficient and easy-to-use technologies.}}
 \social[linkedin]{seba-sz}
 \social[twitter]{ZebaSzp}
 \social[github]{ZebaSz}
@@ -19,47 +20,47 @@
 
 \makecvtitle
 
-\section*{Experiencia Laboral}
+\section*{\gettext{Work Experience}}
 
-    \cventry{Jun 2016 - Actualidad}{Analista Desarrollador SSr}{Despegar.com}{Buenos Aires}{}{
+    \cventry{\gettext{Jun 2016 - Present}}{\gettext{Ssr Android Developer}}{Despegar.com}{Buenos Aires}{}{
         \begin{itemize}
-            \item Desarrollo de dos aplicaciones con más 250k usuarios diarios
-            \item Diseño de arquitectura con en patrones reutilizables para mejor escalabilidad
-            \item Monitoreo y mejoramiento de métricas ténicas (Error Rate, ANR, APK size)
-            \item Testing de UI automatizado con Robotium y UIAutomator
+            \item \gettext{Development of two applications with over 250k daily active users}
+            \item \gettext{Architecture design with reusable patterns for better scalability}
+            \item \gettext{Monitoring and improvement of technical metrics (Error Rate, ANR, APK size)}
+            \item \gettext{Automated UI Testing with Robotium and UIAutomator}
         \end{itemize}}
 
-    \cventry{Feb 2016 - Jun 2016}{Trainee}{Despegar.com}{Buenos Aires}{}{
-        Capacitación con tecnologías de todo el stack: back-end, front-end, QA/Automation}
+    \cventry{\gettext{Feb 2016 - Jun 2016}}{\gettext{Trainee}}{Despegar.com}{Buenos Aires}{}{
+        \gettext{Training on technologies across the entire stack: backend, frontend, QA/Automation}}
 
-\section*{Formación}
+\section*{\gettext{Formal Education}}
 
-    \cvitemwithcomment{2014 - Actualidad}{Universidad de Buenos Aires, Lic. en Ciencias de la Computación}{Universidad\\ 4to año}
+    \cvitemwithcomment{\gettext{2014 - Present}}{\gettext{Universidad de Buenos Aires, MSc Computer Science}}{\gettext{University}\\ \gettext{4th year}}
 
-    \cvitemwithcomment{2008 - 2012}{Colegio Nacional de Buenos Aires, Bachiller}{Secundario}
+    \cvitemwithcomment{\gettext{2008 - 2012}}{\gettext{Colegio Nacional de Buenos Aires}}{\gettext{High School}}
 
-    \cvitemwithcomment{2009}{Cambridge F.C.E. (First Certificate in English)}{Inglés\\ Nota: ”A”}
+    \cvitemwithcomment{\gettext{2009}}{\gettext{Cambridge F.C.E. (First Certificate in English)}}{\gettext{English}\\ \gettext{Grade: ”A”}}
 
-\section*{Conocimientos técnicos}
+\section*{\gettext{Technical Skills}}
 
-    \cvitem{Lenguajes de programación}{Java, C/C++, JavaScript, HTML+CSS, SQL, Smalltalk, PHP}
+    \cvitem{\gettext{Programming Languages}}{\gettext{Java, C/C++, JavaScript, HTML+CSS, SQL, Smalltalk, PHP}}
 
-    \cvitem{Frameworks}{Android SDK, Spring MVC}
+    \cvitem{\gettext{Frameworks}}{\gettext{Android SDK, Spring MVC}}
 
-    \cvitem{Bibliotecas}{jQuery, JUnit, TestNG}
+    \cvitem{\gettext{Libraries}}{\gettext{jQuery, JUnit, TestNG}}
 
-    \cvitem{Herramientas}{IDEs de JetBrains (IntelliJ, etc.), Maven, Gradle, New Relic, Sass, Selenium, Cassandra, Jenkins, SonarQube, Git, Shell script}
+    \cvitem{\gettext{Tools}}{\gettext{JetBrains IDEs (IntelliJ, etc.), Maven, Gradle, New Relic, Sass, Selenium, Cassandra, Jenkins, SonarQube, Git, Shell script}}
 
-    \cvitem{Otros}{Programación orientada a Objetos y Programación Funcional}
+    \cvitem{\gettext{Other}}{\gettext{Object Oriented and Functional Programming}}
 
-\section*{Idiomas}
-    \cvitem{Inglés}{Oral y escrito bilingüe}
+\section*{\gettext{Languages}}
+    \cvitem{\gettext{English}}{\gettext{Bilingual oral and written}}
     
-    \cvitem{Francés}{Oral y escrito básico}
+    \cvitem{\gettext{French}}{\gettext{Basic written}}
 
-\section*{Actividades y Proyectos personales}
-    \cvitem{Proyecto}{Fork del tema para Wordpress WicketPixie: migración de diseño por imágenes a CSS3; actualización a versiones más nuevas del API de Wordpress; implementación de internacionalización; refracción y limpieza de código; instalación de servidor LAMP local para testing; control de versiones – disponible en https://github.com/ZebaSz/wicketpixie}
+\section*{\gettext{Personal Projects and Activities}}
+    \cvitem{\gettext{Project}}{\gettext{Fork of WicketPixie Wordpress theme: migration from image-based design to CSS3; update to newer Wordpress APIs; i18n implementation; code cleanup and refactoring; usage of local LAMP server for testing; version control – available at https://github.com/ZebaSz/wicketpixie}}
 
-    \cvitem{Evento}{Participación en la Game Work Jam 2014: programación con Unity3D, UnityScript (JavaScript) y C\#; diseño, organización de proyecto y brainstorming}
+    \cvitem{\gettext{Event}}{\gettext{Participation in 2014 Game Work Jam: programming with Unity3D, UnityScript (JavaScript) and C\#; design, project management and brainstorming}}
 
 \end{document}
