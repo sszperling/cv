@@ -61,7 +61,7 @@ class Document:
 	def generate(self):
 		root, _ = os.path.splitext(self.name)
 		output = root+'.pdf'
-		subprocess.check_call(['texfot', 'pdflatex', self.name])
+		subprocess.check_call(['texfot', 'xelatex', self.name])
 		return output
 
 	def find_tags(self, tag, nargs=1):

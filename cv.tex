@@ -1,7 +1,11 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
 \documentclass[10pt, a4paper, sans]{moderncv}
 \usepackage[a4paper, margin=1.5cm, bottom=2.5cm]{geometry}
-\usepackage[utf8]{inputenc}
 \usepackage{gettext}
+\usepackage{fontspec}
+\defaultfontfeatures{
+    Path = /usr/share/texmf-dist/fonts/opentype/public/fontawesome/}
 \usepackage{fontawesome}
 \usepackage[english]{babel}
 
@@ -21,21 +25,25 @@
 \makecvtitle
 
 \section*{\gettext{Work Experience}}
+    \cventry{\gettext{Jun 2019 - Present}}{\gettext{Software and Data Engineer}}{Despegar.com}{Buenos Aires}{}{
+        \gettext{Developing new backend applications for internal usage, with a focus on quality.} \\
+        \gettext{I help replace legacy applications with new and more efficient alternatives, reducing costs and simplifying maintenance.} \\
+        \gettext{I manage data infrastructure applications such as Presto, which are utilized by our analysts to react efficiently to customer demands, helping to optimize and extract the most out of our available resources.} \\
+        \gettext{I work with a diverse set of programming languages and tools to better attend to each application's needs.}
+    }
 
-    \cventry{\gettext{Jun 2016 - Present}}{\gettext{Ssr Android Developer}}{Despegar.com}{Buenos Aires}{}{
-        \begin{itemize}
-            \item \gettext{Development of two applications with over 250k daily active users}
-            \item \gettext{Architecture design with reusable patterns for better scalability}
-            \item \gettext{Monitoring and improvement of technical metrics (Error Rate, ANR, APK size)}
-            \item \gettext{Automated UI Testing with Robotium and UIAutomator}
-        \end{itemize}}
+    \cventry{\gettext{Jun 2016 - Jun 2019}}{\gettext{Android Developer}}{Despegar.com}{Buenos Aires}{}{
+        \gettext{Improving Despegar.com's Android applications to deliver a better experience for our over 250k DAU.} \\
+        \gettext{I work to introduce new architecture design with reusable patterns, which help scaling up development, simplifying maintenance and reducing error rates.} \\
+        \gettext{As part of the ownership of these applications, I strongly monitor technical metrics such as Error Rate, ANR reports and APK size.} \\
+        \gettext{We embarked in an ambitious project to extend our automated UI testing coverage using Robotium and UIAutomator with independent modules that allowed our teams to develop faster in parallel while maintaining test coverage.}}
 
     \cventry{\gettext{Feb 2016 - Jun 2016}}{\gettext{Trainee}}{Despegar.com}{Buenos Aires}{}{
         \gettext{Training on technologies across the entire stack: backend, frontend, QA/Automation}}
 
 \section*{\gettext{Formal Education}}
 
-    \cvitemwithcomment{\gettext{2014 - Present}}{\gettext{Universidad de Buenos Aires, MSc Computer Science}}{\gettext{University}\\ \gettext{4th year}}
+    \cvitemwithcomment{\gettext{2014 - Present}}{\gettext{Universidad de Buenos Aires, MSc Computer Science}}{\gettext{University}\\ \gettext{5th year}}
 
     \cvitemwithcomment{\gettext{2008 - 2012}}{\gettext{Colegio Nacional de Buenos Aires}}{\gettext{High School}}
 
@@ -43,13 +51,13 @@
 
 \section*{\gettext{Technical Skills}}
 
-    \cvitem{\gettext{Programming Languages}}{\gettext{Java, C/C++, JavaScript, HTML+CSS, SQL, Smalltalk, PHP}}
+    \cvitem{\gettext{Programming Languages}}{\gettext{Java, Kotlin, Scala, Python, C/C++, JavaScript, HTML+CSS, SQL, Smalltalk, PHP}}
 
-    \cvitem{\gettext{Frameworks}}{\gettext{Android SDK, Spring MVC}}
+    \cvitem{\gettext{Frameworks}}{\gettext{Android SDK, Spring MVC, Ktor}}
 
     \cvitem{\gettext{Libraries}}{\gettext{jQuery, JUnit, TestNG}}
 
-    \cvitem{\gettext{Tools}}{\gettext{JetBrains IDEs (IntelliJ, etc.), Maven, Gradle, New Relic, Sass, Selenium, Cassandra, Jenkins, SonarQube, Git, Shell script}}
+    \cvitem{\gettext{Tools}}{\gettext{JetBrains IDEs, Maven, Gradle, New Relic, Sass, Jenkins, SonarQube, Docker, Git, Shell script}}
 
     \cvitem{\gettext{Other}}{\gettext{Object Oriented and Functional Programming}}
 
@@ -58,9 +66,11 @@
     
     \cvitem{\gettext{French}}{\gettext{Basic written}}
 
+%    \cvitem{\gettext{Swedish}}{\gettext{Learning}}
+%
 \section*{\gettext{Personal Projects and Activities}}
-    \cvitem{\gettext{Project}}{\gettext{Fork of WicketPixie Wordpress theme: migration from image-based design to CSS3; update to newer Wordpress APIs; i18n implementation; code cleanup and refactoring; usage of local LAMP server for testing; version control – available at https://github.com/ZebaSz/wicketpixie}}
+    \cvitem{\gettext{Project}}{\gettext{Fork of WicketPixie Wordpress theme: migration from image-based design to CSS3, update to newer Wordpress APIs, i18n support and general maintentance}}
 
-    \cvitem{\gettext{Event}}{\gettext{Participation in 2014 Game Work Jam: programming with Unity3D, UnityScript (JavaScript) and C\#; design, project management and brainstorming}}
+    \cvitem{\gettext{Event}}{\gettext{Participation in 2014 Game Work Jam: programming with Unity3D, JavaScript and C\#}}
 
 \end{document}

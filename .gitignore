@@ -4,3 +4,7 @@
 *.toc
 *.synctex.gz
 __pycache__
+
+*.pot
+*.pdf
+*.tex
