@@ -3,6 +3,7 @@
 
 import argparse
 import logging
+import platform
 import os
 import os.path
 import re
@@ -34,7 +35,12 @@ def generate(input, languages=None):
 		outputs.append(i.generate())
 
 	for i in outputs:
-		subprocess.check_call(['xdg-open', i])
+		if platform.system() == 'Darwin':       # macOS
+			subprocess.check_call(('open', i))
+		elif platform.system() == 'Windows':    # Windows
+			os.startfile(i)
+		else:                                   # linux variants
+			subprocess.check_call(('xdg-open', i))
 
 def main():
 	parser = argparse.ArgumentParser(description='Documents internationalization tool (version {})'.format(VERSION))

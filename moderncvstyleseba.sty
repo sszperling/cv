@@ -25,15 +25,15 @@
 %                fonts & icons
 %-------------------------------------------------------------------------------
 % Latin Modern fonts
-%\ifxetexorluatex
-%  \setmainfont{Latin Modern Roman}
-%  \setsansfont{Latin Modern Sans}
-%  \setmathfont{Latin Modern Math}
-%\else
+\ifxetexorluatex
+  \setmainfont{Latin Modern Roman}
+  \setsansfont{Latin Modern Sans}
+  \setmathfont{Latin Modern Math}
+\else
   \IfFileExists{lmodern.sty}%
     {\RequirePackage{lmodern}}%
     {}
-%\fi
+\fi
 
 % symbols
 \moderncvicons{awesome}
@@ -44,7 +44,7 @@
 %-------------------------------------------------------------------------------
 \moderncvhead[\moderncvstyleheadoptions]{6}
 \moderncvbody{1}
-%\moderncvfoot{1}
+\moderncvfoot{1}
 
 
 \endinput

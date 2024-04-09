@@ -1,2 +1,2 @@
-cv:
-	./generate.py --input=cv.tex
+cv: cv.tex
+	python generate.py --input=cv.tex

@@ -5,71 +5,82 @@
 \usepackage{gettext}
 \usepackage{fontspec}
 \defaultfontfeatures{
-    Path = /usr/share/texmf-dist/fonts/opentype/public/fontawesome/}
-\usepackage{fontawesome}
+    %Path = /usr/share/texmf-dist/fonts/opentype/public/fontawesome/}
+    Path = /usr/local/texlive/2023/texmf-dist/fonts/opentype/public/fontawesome/}
+\usepackage{fontawesome5}
 \usepackage[english]{babel}
 
-\moderncvstyle{seba}
+\moderncvstyle{classic}
 \moderncvcolor{blue}
 
-\name{Sebastián Ariel}{Szperling}
-\phone[mobile]{+54 (11) 3511-8184}
+\name{Safiro Sebastián}{Szperling}
+%\title{\gettext{they/she/he}}
+\phone[mobile]{+54 (911) 3511-8184}
 \email{zebaszp@gmail.com}
-\quote{\gettext{I'm a CS student with a knack for the low-level. I work on making apps better in terms of performance, creating scalable architectures and always keeping up-to-date with efficient and easy-to-use technologies.}}
-\social[linkedin]{seba-sz}
-\social[twitter]{ZebaSzp}
-\social[github]{ZebaSz}
+\quote{\gettext{I'm a Senior Mobile Developer specialized on Android. I work on making apps more stable and performant, creating scalable architectures and always keeping up-to-date with efficient and easy-to-use technologies.}}
+\social[linkedin]{sszperling}
+\social[github]{sszperling}
 
 \begin{document}
 
 \makecvtitle
 
 \section*{\gettext{Work Experience}}
-    \cventry{\gettext{Jun 2019 - Present}}{\gettext{Software and Data Engineer}}{Despegar.com}{Buenos Aires}{}{
-        \gettext{Developing new backend applications for internal usage, with a focus on quality.} \\
-        \gettext{I help replace legacy applications with new and more efficient alternatives, reducing costs and simplifying maintenance.} \\
-        \gettext{I manage data infrastructure applications such as Presto, which are utilized by our analysts to react efficiently to customer demands, helping to optimize and extract the most out of our available resources.} \\
-        \gettext{I work with a diverse set of programming languages and tools to better attend to each application's needs.}
+    \cventry{\gettext{May 2022 - present}}{\gettext{Staff Software Engineer - Mobile}}{Medallia}{Buenos Aires}{}{
+        \gettext{Lead developer for several B2B applications for Android and iOS} \\
+        \gettext{Lead developer and Architect for large migrations of legacy code to Jetpack Compose and SwiftUI} \\
+        \gettext{Responsible for designing and implementing stability, testability and metric monitoring improvements} \\
+        \gettext{Coaching and instructing developers with less seniority on security and Android development practices}
+    }
+
+    \cventry{\gettext{Oct 2020 - May 2022}}{\gettext{Senior Software Engineer - Mobile}}{Medallia}{Buenos Aires}{}{
+        \gettext{Development of two B2B applications for Android and iOS} \\
+        \gettext{Development and maintenance of new and existing features in React Native} \\
+        \gettext{Quality monitoring using Crashlytics and AppDynamics for release stability improvement}
+    }
+
+    \cventry{\gettext{Jun 2019 - Oct 2020}}{\gettext{Software Engineer}}{Despegar.com}{Buenos Aires}{}{
+        \gettext{Development and maintenance of Java, Scala and Kotlin applications} \\
+        \gettext{Management and monitoring of data infrastructure} \\
+        \gettext{Service modernization and resource optimization on AWS}
     }
 
     \cventry{\gettext{Jun 2016 - Jun 2019}}{\gettext{Android Developer}}{Despegar.com}{Buenos Aires}{}{
-        \gettext{Improving Despegar.com's Android applications to deliver a better experience for our over 250k DAU.} \\
-        \gettext{I work to introduce new architecture design with reusable patterns, which help scaling up development, simplifying maintenance and reducing error rates.} \\
-        \gettext{As part of the ownership of these applications, I strongly monitor technical metrics such as Error Rate, ANR reports and APK size.} \\
-        \gettext{We embarked in an ambitious project to extend our automated UI testing coverage using Robotium and UIAutomator with independent modules that allowed our teams to develop faster in parallel while maintaining test coverage.}}
+        \gettext{Development of two applications with over 250k daily active users} \\
+        \gettext{Architecture design with reusable patterns for better scalability} \\
+        \gettext{Monitoring and improvement of technical metrics (Error Rate, ANR, APK size)} \\
+        \gettext{Automated UI Testing with Robotium and UIAutomator}
+    }
 
     \cventry{\gettext{Feb 2016 - Jun 2016}}{\gettext{Trainee}}{Despegar.com}{Buenos Aires}{}{
-        \gettext{Training on technologies across the entire stack: backend, frontend, QA/Automation}}
-
-\section*{\gettext{Formal Education}}
-
-    \cvitemwithcomment{\gettext{2014 - Present}}{\gettext{Universidad de Buenos Aires, MSc Computer Science}}{\gettext{University}\\ \gettext{5th year}}
-
-    \cvitemwithcomment{\gettext{2008 - 2012}}{\gettext{Colegio Nacional de Buenos Aires}}{\gettext{High School}}
-
-    \cvitemwithcomment{\gettext{2009}}{\gettext{Cambridge F.C.E. (First Certificate in English)}}{\gettext{English}\\ \gettext{Grade: ”A”}}
+        \gettext{Participation in training process on technologies across the entire stack: backend, frontend, QA/Automation}
+    }
 
 \section*{\gettext{Technical Skills}}
 
-    \cvitem{\gettext{Programming Languages}}{\gettext{Java, Kotlin, Scala, Python, C/C++, JavaScript, HTML+CSS, SQL, Smalltalk, PHP}}
+    \cvitem{\gettext{Programming Languages}}{\gettext{Kotlin, Java, Swift, JavaScript, Objective-C, SQL, Scala, Python, C/C++, HTML5, Shell script}}
 
-    \cvitem{\gettext{Frameworks}}{\gettext{Android SDK, Spring MVC, Ktor}}
+    \cvitem{\gettext{Frameworks and libraries}}{\gettext{Android SDK, iOS Foundation, Jetpack Compose, SwiftUI, React Native, GraphQL, JUnit, XCTest, Jest, Node.js, Ktor, Spring MVC}}
 
-    \cvitem{\gettext{Libraries}}{\gettext{jQuery, JUnit, TestNG}}
-
-    \cvitem{\gettext{Tools}}{\gettext{JetBrains IDEs, Maven, Gradle, New Relic, Sass, Jenkins, SonarQube, Docker, Git, Shell script}}
+    \cvitem{\gettext{Tools}}{\gettext{Android Studio, Xcode, Maven, Gradle, Fastlane, Firebase, Jenkins, Git}}
 
     \cvitem{\gettext{Other}}{\gettext{Object Oriented and Functional Programming}}
+
+\section*{\gettext{Formal Education}}
+
+    \cvitemwithcomment{\gettext{2014 - 2020}}{\gettext{MSc Computer Science, Universidad de Buenos Aires}}{\gettext{University}}
+
+    \cvitemwithcomment{\gettext{2008 - 2012}}{\gettext{Colegio Nacional de Buenos Aires}}{\gettext{High School}}
 
 \section*{\gettext{Languages}}
     \cvitem{\gettext{English}}{\gettext{Bilingual oral and written}}
     
     \cvitem{\gettext{French}}{\gettext{Basic written}}
 
-%    \cvitem{\gettext{Swedish}}{\gettext{Learning}}
-%
+    \cvitem{\gettext{Swedish}}{\gettext{Basic oral and written}}
+
 \section*{\gettext{Personal Projects and Activities}}
-    \cvitem{\gettext{Project}}{\gettext{Fork of WicketPixie Wordpress theme: migration from image-based design to CSS3, update to newer Wordpress APIs, i18n support and general maintentance}}
+    \cvitem{\gettext{Project}}{\gettext{Fork of WicketPixie Wordpress theme: optimization, several new features and general maintentance}}
 
     \cvitem{\gettext{Event}}{\gettext{Participation in 2014 Game Work Jam: programming with Unity3D, JavaScript and C\#}}
 
